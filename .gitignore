@@ -104,3 +104,7 @@ dist
 .tern-port
 
 .scannerwork
+
+/basura
+
+.DS_Store
