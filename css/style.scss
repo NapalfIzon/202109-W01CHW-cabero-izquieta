@@ -1,0 +1,108 @@
+@import "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.header-container {
+  // margin-top: 50px;
+  height: 143.59px;
+  display: flex;
+  flex-direction: column;
+  background: white;
+}
+/*.container-fixed-header {
+  display: flex;
+  position: fixed;
+  top: 0;
+}*/
+.navigation-bar {
+  position: sticky;
+  top: 0;
+}
+
+.fixed-header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: hsl(0, 0%, 95%);
+}
+
+.header-burger {
+  background: url($burger-url) no-repeat;
+  &__logo-header-burger {
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.header-login {
+  width: 27px;
+  height: 27px;
+  background: url($sprite-url) 0 0 no-repeat;
+  &:hover {
+    background: url($sprite-url) -37px 0 no-repeat;
+    cursor: pointer;
+  }
+}
+
+.header-shop {
+  display: flex;
+
+  &__magnifier {
+    width: 50px;
+    height: 50px;
+    background: #bbb8b6 url($sprite-url) -304px 12px no-repeat;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__shopping {
+    background: #fff url($sprite-url) -66px 10px no-repeat;
+    width: 50px;
+    height: 50px;
+    &:hover {
+      background: #ff5959 url($sprite-url) -105px 10px no-repeat;
+      cursor: pointer;
+    }
+  }
+
+  &__articles {
+    width: 50px;
+    height: 50px;
+    background: #ff5959;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__product-count {
+      font-family: "Tahoma";
+      font-size: 20px;
+      color: white;
+    }
+  }
+}
+
+.logo-header-mobile {
+  //width: 325px;
+
+  height: 99px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 40px;
+  &:hover {
+    cursor: pointer;
+  }
+
+  &__image {
+    width: 276px;
+    height: 50px;
+  }
+}
