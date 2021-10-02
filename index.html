@@ -8,21 +8,36 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
-      <div class="header-container">
-        <div class="fixed-header">
-          <div class="header-burger"></div>
-          <div class="header-login"></div>
-          <div class="header-shop">
-            <div class="header-shop_magnifier"></div>
+    <nav class="navigation-bar">
+      <div class="fixed-header">
+        <div class="header-burger">
+          <img
+            class="header-burger__logo-header-burger"
+            src="/icons/burger_menu.png"
+            alt="Logo burger menu"
+          />
+        </div>
+        <div class="header-login"></div>
+        <div class="header-shop">
+          <div class="header-shop__magnifier"></div>
 
-            <div class="header-shop_shopping"></div>
+          <div class="header-shop__shopping"></div>
 
-            <div class="header-shop_articles"></div>
-            <p class="header-shop_articles_product-count"></p>
+          <div class="header-shop__articles">
+            <p class="header-shop__articles__product-count">0</p>
           </div>
         </div>
-        <div class="logo-header-mobile"></div>
+      </div>
+    </nav>
+    <header>
+      <div class="header-container">
+        <div class="logo-header-mobile">
+          <img
+            class="logo-header-mobile__image"
+            src="/icons/logo-small.svg"
+            alt="Logo pequeño para mobile"
+          />
+        </div>
       </div>
     </header>
     <main class="main-content">
