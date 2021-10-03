@@ -163,6 +163,7 @@
   letter-spacing: 6px;
   padding: 20px;
 }
+
 .main-title__separator-bar {
   background: rgb(46, 41, 37);
   width: 218px;
@@ -252,9 +253,11 @@
   justify-content: space-around;
   align-items: center;
   &__block {
+    width: 480px;
     display: flex;
     align-content: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
   }
   &__block-A {
     display: flex;
@@ -415,19 +418,21 @@
   height: 160px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   &__title {
-    height: 80px;
-    width: 100vw;
+    height: 100px;
+    width: 325px;
     margin-bottom: 15px;
     display: flex;
     align-content: center;
     justify-content: center;
-    align-items: flex-end;
+    flex-direction: row-reverse;
     text-align: center;
     font: 12px/1.55 "Source Sans Pro", sans-serif;
     color: #67635f;
     font-size: 14px;
     line-height: 16px;
+    padding-top: 80px;
   }
   &__logos {
     display: flex;
@@ -491,6 +496,9 @@
     width: 325px;
     background-color: #a5a5a5;
   }
+  &__desktop-separator-bar {
+    display: none;
+  }
   &__title {
     height: 50px;
     font: 12px/1.55 "Source Sans Pro", sans-serif;
@@ -521,6 +529,7 @@
     justify-content: center;
   }
   &__checkbox {
+    height: 18px;
     width: 217px;
     color: #67625f;
     font-size: 14px;
@@ -662,6 +671,7 @@
 }
 
 @media (min-width: 600px) {
+
   .navigation-bar {
     display: none;
   }
@@ -827,6 +837,86 @@
     &__image {
       width: 80px;
       height: 80px;
+
+  .information {
+    background-color: #e8e6e5;
+    height: 215px;
+    display: flex;
+    flex-direction: row;
+    &__block {
+      min-width: 650px;
+      width: 900px;
+      margin: 0;
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+
+  .footer-second-block {
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .newsletter {
+    display: flex;
+    height: 147px;
+    margin-top: 59px;
+    margin-bottom: 59px;
+    &__separator-bar {
+      display: none;
+    }
+    &__desktop-separator-bar {
+      display: flex;
+      height: 147px;
+      width: 1px;
+      background-color: #a5a5a5;
+      margin-top: 59px;
+      margin-bottom: 59px;
+    }
+    &__title {
+      height: 30px;
+      margin-top: 0;
+    }
+    &__checkbox {
+      height: 18px;
+      width: 250px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      outline: none;
+      margin-top: 5px;
+      margin-left: 5px;
+    }
+    &__formulary {
+      margin-left: 75px;
+      margin-right: 75px;
+      width: 245px;
+      display: flex;
+    }
+    &__mail {
+      width: 240px;
+    }
+  }
+
+  .more-info {
+    width: 265px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 25px;
+    &__contact-link {
+      display: flex;
+      flex-direction: row;
+    }
+    &__about-us-link {
+      display: flex;
+      flex-direction: row;
+    }
+    &__chart-conditions-link {
+      display: flex;
+      flex-direction: row;
+
     }
   }
 }
