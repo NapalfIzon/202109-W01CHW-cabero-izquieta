@@ -29,6 +29,7 @@ width: 325px;
 
 camion {
 width: 85px;
+height: 60px;
 background: url($sprite-url) 0 -38px no-repeat transparent;
 }
 

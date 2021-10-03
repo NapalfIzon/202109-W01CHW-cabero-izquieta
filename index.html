@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fiestas</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="icon"
+      href="https://static3.marialunarillos.com/media/favicon/default/favicon_1.png"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <nav class="navigation-bar">
@@ -44,7 +49,7 @@
       <article class="main-logo">
         <img
           class="main-logo_image"
-          src="/images/tarta-cumpleanos.png"
+          src="/icons/tarta-cumpleanos.png"
           alt="logo tarta cumpleanos"
         />
       </article>
@@ -97,7 +102,7 @@
     </main>
     <footer class="footer">
       <div class="information">
-        <div class="information__block-1">
+        <div class="information__block">
           <div class="information__block-A">
             <div class="information__logo-A">
               <!--aquí logo camión-->
@@ -119,7 +124,7 @@
             </div>
           </div>
         </div>
-        <div class="information__block-2">
+        <div class="information__block">
           <div class="information__block-C">
             <div class="information__logo-C">
               <!--aquí logo sobre con flecha-->
@@ -180,20 +185,25 @@
         <form class="newsletter__formulary" action="#" method="get">
           <div class="newsletter__mail">
             <input
+              class="newsletter__email"
               type="email"
-              name="newsletter-email"
-              id="newsletter-email"
+              name="newsletter__email"
+              id="newsletter__email"
               required
             />
           </div>
           <div class="newsletter__checkbox">
             <input
               type="checkbox"
+              class="newsletter__lopd"
               name="newsletter__lopd"
               id="newsletter__lopd"
             />
             <label for="newsletter__lopd">
-              Acepto la <a href="#">política de privacidad</a>
+              Acepto la
+              <a class="newsletter__lopd-link" href="#"
+                >política de privacidad</a
+              >
             </label>
           </div>
           <div class="newsletter__button-suscription">
@@ -205,32 +215,28 @@
         </div>
       </div>
       <div class="more-info">
-        <div class="more-info__contact">
-          <a class="more-info__contact-link" href="#">
-            <div class="more-info__contact-logo">
-              <!--aquí logo sobre pequeño rojo-->
-            </div>
-            <div class="more-info__contact-text">
-              <p>CONTACTO</p>
-            </div>
-          </a>
-        </div>
-        <div class="more-info__about-us">
-          <a class="more-info__about-us-link" href="#">
-            <div class="more-info__about-us-logo">
-              <!--aquí logo i pequeño rojo-->
-            </div>
-            <p class="more-info__about-us-text">SOBRE NOSOTROS</p>
-          </a>
-        </div>
-        <div class="more-info__chart-conditions">
-          <a class="more-info__chart-conditions-link" href="#">
-            <div class="more-info__chart-conditions-logo">
-              <!--aquí logo carrito pequeño rojo-->
-            </div>
-            <p class="more-info__chart-conditions-text">CONDICIONES DE VENTA</p>
-          </a>
-        </div>
+        <a class="more-info__contact-link" href="#">
+          <div class="more-info__contact-logo">
+            <!--aquí logo sobre pequeño rojo-->
+          </div>
+          <div class="more-info__contact-text">
+            <p class="more-info__contact-text">CONTACTO</p>
+          </div>
+        </a>
+
+        <a class="more-info__about-us-link" href="#">
+          <div class="more-info__about-us-logo">
+            <!--aquí logo i pequeño rojo-->
+          </div>
+          <p class="more-info__about-us-text">SOBRE NOSOTROS</p>
+        </a>
+
+        <a class="more-info__chart-conditions-link" href="#">
+          <div class="more-info__chart-conditions-logo">
+            <!--aquí logo carrito pequeño rojo-->
+          </div>
+          <p class="more-info__chart-conditions-text">CONDICIONES DE VENTA</p>
+        </a>
       </div>
       <div class="copyright">
         <p class="copyright__text">

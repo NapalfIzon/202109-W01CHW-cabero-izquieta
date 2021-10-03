@@ -1,11 +1,12 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap%22");
 @import "variables";
 
 * {
   margin: 0;
   padding: 0;
-}
-
-body {
+  font-family: "Source Sans Pro", sans-serif;
+  overflow-x: hidden;
   box-sizing: border-box;
 }
 
@@ -91,7 +92,6 @@ body {
 
 .logo-header-mobile {
   //width: 325px;
-
   height: 99px;
   display: flex;
   justify-content: center;
@@ -104,5 +104,370 @@ body {
   &__image {
     width: 276px;
     height: 50px;
+  } 
+}
+  .information {
+  background-color: #e8e6e5;
+  height: 438px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  &__block {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  &__block-A {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 5px;
+  }
+  &__logo-A {
+    width: 85px;
+    height: 60px;
+    background: url($sprite-url) 0 -38px no-repeat transparent;
+    margin-bottom: 20px;
+  }
+  &__text-A {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__text-A-upper {
+    font: 12px/1.55 "Source Sans Pro", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    color: #67635f;
+    line-height: 18px;
+    margin-bottom: 0;
+  }
+  &__text-A-lower {
+    font: 12px/1.55 "Source Sans Pro", sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    color: #67635f;
+    margin-top: 0;
+  }
+  &__block-B {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 5px;
+  }
+  &__logo-B {
+    width: 55px;
+    height: 60px;
+    background: url($sprite-url) -90px -38px no-repeat transparent;
+    margin-bottom: 20px;
+  }
+  &__text-B {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__text-B-upper {
+    font: 12px/1.55 "Source Sans Pro", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    color: #67635f;
+    line-height: 18px;
+    color: #67625f;
+    margin-bottom: 0;
+  }
+  &__text-B-lower {
+    width: 162px;
+    font: 12px/1.55 "Source Sans Pro", sans-serif;
+    text-align: center;
+    color: #67635f;
+    margin-top: 0;
+  }
+  &__block-C {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 5px;
+  }
+  &__logo-C {
+    width: 68px;
+    height: 60px;
+    background: url($sprite-url) -150px -36px no-repeat transparent;
+    margin-bottom: 20px;
+  }
+  &__text-C {
+    width: 162px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__text-C-upper {
+    font: 12px/1.55 "Source Sans Pro", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    color: #67635f;
+    line-height: 18px;
+    margin-bottom: 0;
+  }
+  &__text-C-lower {
+    font: 12px/1.55 "Source Sans Pro", sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #67635f;
+    margin-top: 0;
+  }
+  &__block-D {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 5px;
+  }
+  &__logo-D {
+    width: 77px;
+    height: 60px;
+    background: url($sprite-url) -223px -38px no-repeat transparent;
+    margin-bottom: 20px;
+  }
+  &__text-D {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__text-D-upper {
+    font: 12px/1.55 "Source Sans Pro", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    color: #67635f;
+    line-height: 18px;
+    color: #67625f;
+    margin-bottom: 0;
+  }
+  &__text-D-lower {
+    width: 162px;
+    font: 12px/1.55 "Source Sans Pro", sans-serif;
+    text-align: center;
+    color: #67635f;
+    margin-top: 0;
+  }
+}
+
+.social-net {
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  &__title {
+    height: 80px;
+    width: 100vw;
+    margin-bottom: 15px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    font: 12px/1.55 "Source Sans Pro", sans-serif;
+    color: #67635f;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  &__logos {
+    display: flex;
+    justify-content: center;
+  }
+  &__facebook {
+    width: 33px;
+    height: 32px;
+    background: url($sprite-url) 0 -494px no-repeat transparent;
+    margin: 1px;
+  }
+  &__twitter {
+    width: 33px;
+    height: 32px;
+    background: url($sprite-url) -35px -494px no-repeat transparent;
+    margin: 1px;
+  }
+  &__instagram {
+    width: 33px;
+    height: 32px;
+    background: url($sprite-url) -70px -494px no-repeat transparent;
+    margin: 1px;
+  }
+  &__pinterest {
+    width: 33px;
+    height: 32px;
+    background: url($sprite-url) -106px -494px no-repeat transparent;
+    margin: 1px;
+  }
+  &__youtube {
+    width: 33px;
+    height: 32px;
+    background: url($sprite-url) -176px -494px no-repeat transparent;
+    margin: 1px;
+  }
+}
+
+.newsletter {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  &__separator-bar {
+    height: 1px;
+    width: 325px;
+    background-color: #a5a5a5;
+  }
+  &__title {
+    height: 50px;
+    font: 12px/1.55 "Source Sans Pro", sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    color: #67625f;
+    margin-top: 4px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  &__formulary {
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  &__mail {
+    height: 40px;
+    width: 325px;
+    display: flex;
+    justify-content: center;
+  }
+  &__email {
+    width: 325px;
+    display: flex;
+    justify-content: center;
+  }
+  &__checkbox {
+    width: 217px;
+    color: #67625f;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    outline: none;
+  }
+  &__lopd-link {
+    color: #67625f;
+  }
+  &__button-suscription {
+    height: 40px;
+    width: 325px;
+  }
+  &__button {
+    height: 40px;
+    width: 325px;
+    background-color: #ff5959;
+    color: #fff;
+    border: none;
+    line-height: 40px;
+    font-size: 13.33px;
+    font-family: Arial;
+    font-weight: bolder;
+    text-indent: 0px;
+  }
+}
+
+.more-info {
+  height: 265px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  &__contact-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+  }
+  &__contact-logo {
+    background: url($sprite-url) 0 -207px no-repeat;
+    width: 30px;
+    height: 31px;
+    margin: 3px;
+  }
+  &__contact-text {
+    margin: 3px;
+    color: #ff5959;
+    font: 12px/1.55 "Source Sans Pro", sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+  }
+  &__about-us-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+  }
+  &__about-us-logo {
+    background: url($sprite-url) 0 -246px no-repeat;
+    width: 30px;
+    height: 31px;
+    margin: 3px;
+  }
+  &__about-us-text {
+    margin: 3px;
+    color: #ff5959;
+    font: 12px/1.55 "Source Sans Pro", sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+  }
+  &__chart-conditions-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+  }
+  &__chart-conditions-logo {
+    background: url($sprite-url) 0 -285px no-repeat;
+    width: 30px;
+    height: 31px;
+    margin: 3px;
+  }
+  &__chart-conditions-text {
+    margin: 3px;
+    color: #ff5959;
+    font: 12px/1.55 "Source Sans Pro", sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+  }
+}
+
+.copyright {
+  height: 50px;
+  background-color: #ff5959;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__text {
+    font: 12px/1.55 "Source Sans Pro", sans-serif;
+    font-size: 14px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+  }
+  a {
+    font: 12px/1.55 "Source Sans Pro", sans-serif;
+    font-size: 14px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
   }
 }
