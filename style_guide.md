@@ -9,6 +9,11 @@ The designs were created to the following widths:
 
 ## Colors
 
+- Soft Red : #FF5959
+- Light grey: hsl(0,0%,95%)
+- Dark grey: hsl(30,4%,39%)
+- Very dark grey: hsl(27,11%,16%)
+
 ### Primary
 
 #### Text
@@ -37,4 +42,4 @@ The designs were created to the following widths:
 ### Font
 
 - Family: [Source Sans Pro](https://fonts.google.com/specimen/Source+Sans+Pro)
-- Weights: 400, 700
+- Weights: 400, 600, 900

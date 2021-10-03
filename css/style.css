@@ -6,6 +6,101 @@
   overflow-x: hidden;
 }
 
+body {
+  box-sizing: border-box;
+}
+
+.header-container {
+  height: 143.59px;
+  display: flex;
+  flex-direction: column;
+  background: white;
+}
+
+/*.container-fixed-header {
+  display: flex;
+  position: fixed;
+  top: 0;
+}*/
+.navigation-bar {
+  position: sticky;
+  top: 0;
+}
+
+.fixed-header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #f2f2f2;
+}
+
+.header-burger {
+  background: url("/icons/burger_menu.png") no-repeat;
+}
+.header-burger:hover {
+  cursor: pointer;
+}
+
+.header-login {
+  width: 27px;
+  height: 27px;
+  background: url("/icons/sprite.svg") 0 0 no-repeat;
+}
+.header-login:hover {
+  background: url("/icons/sprite.svg") -37px 0 no-repeat;
+  cursor: pointer;
+}
+
+.header-shop {
+  display: flex;
+}
+.header-shop__magnifier {
+  width: 50px;
+  height: 50px;
+  background: #bbb8b6 url("/icons/sprite.svg") -304px 12px no-repeat;
+}
+.header-shop__magnifier:hover {
+  cursor: pointer;
+}
+.header-shop__shopping {
+  background: #fff url("/icons/sprite.svg") -66px 10px no-repeat;
+  width: 50px;
+  height: 50px;
+}
+.header-shop__shopping:hover {
+  background: #ff5959 url("/icons/sprite.svg") -105px 10px no-repeat;
+  cursor: pointer;
+}
+.header-shop__articles {
+  width: 50px;
+  height: 50px;
+  background: #ff5959;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-shop__articles__product-count {
+  font-family: "Tahoma";
+  font-size: 20px;
+  color: white;
+}
+
+.logo-header-mobile {
+  height: 99px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 40px;
+}
+.logo-header-mobile:hover {
+  cursor: pointer;
+}
+.logo-header-mobile__image {
+  width: 276px;
+  height: 50px;
+}
+
 .information {
   background-color: #e8e6e5;
   height: 438px;
@@ -370,6 +465,5 @@
   text-align: center;
   color: #fff;
   text-decoration: none;
-}
 
 /*# sourceMappingURL=style.css.map */
