@@ -509,6 +509,7 @@
   justify-content: center;
 }
 .newsletter__checkbox {
+  height: 18px;
   width: 217px;
   color: #67625f;
   font-size: 14px;
