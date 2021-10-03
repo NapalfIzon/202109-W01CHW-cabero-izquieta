@@ -240,9 +240,11 @@
   align-items: center;
 }
 .information__block {
+  width: 480px;
   display: flex;
   align-content: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .information__block-A {
   display: flex;
@@ -402,20 +404,22 @@
   height: 160px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .social-net__title {
-  height: 80px;
-  width: 100vw;
+  height: 100px;
+  width: 325px;
   margin-bottom: 15px;
   display: flex;
   align-content: center;
   justify-content: center;
-  align-items: flex-end;
+  flex-direction: row-reverse;
   text-align: center;
   font: 12px/1.55 "Source Sans Pro", sans-serif;
   color: #67635f;
   font-size: 14px;
   line-height: 16px;
+  padding-top: 80px;
 }
 .social-net__logos {
   display: flex;
@@ -478,6 +482,9 @@
   height: 1px;
   width: 325px;
   background-color: #a5a5a5;
+}
+.newsletter__desktop-separator-bar {
+  display: none;
 }
 .newsletter__title {
   height: 50px;
@@ -647,6 +654,89 @@
 .copyright a:hover {
   text-decoration: underline;
   color: #600;
+}
+
+@media (min-width: 600px) {
+  .information {
+    background-color: #e8e6e5;
+    height: 215px;
+    display: flex;
+    flex-direction: row;
+  }
+  .information__block {
+    min-width: 650px;
+    width: 900px;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .footer-second-block {
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .newsletter {
+    display: flex;
+    height: 147px;
+    margin-top: 59px;
+    margin-bottom: 59px;
+  }
+  .newsletter__separator-bar {
+    display: none;
+  }
+  .newsletter__desktop-separator-bar {
+    display: flex;
+    height: 147px;
+    width: 1px;
+    background-color: #a5a5a5;
+    margin-top: 59px;
+    margin-bottom: 59px;
+  }
+  .newsletter__title {
+    height: 30px;
+    margin-top: 0;
+  }
+  .newsletter__checkbox {
+    height: 18px;
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    outline: none;
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+  .newsletter__formulary {
+    margin-left: 75px;
+    margin-right: 75px;
+    width: 245px;
+    display: flex;
+  }
+  .newsletter__mail {
+    width: 240px;
+  }
+
+  .more-info {
+    width: 265px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 25px;
+  }
+  .more-info__contact-link {
+    display: flex;
+    flex-direction: row;
+  }
+  .more-info__about-us-link {
+    display: flex;
+    flex-direction: row;
+  }
+  .more-info__chart-conditions-link {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
