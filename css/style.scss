@@ -18,6 +18,9 @@
   background: hsl(0, 0%, 95%);
   z-index: 3;
 }
+.navigation-bar-desktop {
+  display: none;
+}
 
 .main-header {
   margin-top: 50px;
@@ -668,6 +671,173 @@
 }
 
 @media (min-width: 600px) {
+
+  .navigation-bar {
+    display: none;
+  }
+  .navigation-bar-desktop {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    background: hsl(0, 0%, 95%);
+    z-index: 3;
+    overflow: visible;
+  }
+
+  .fixed-header-desktop {
+    width: 1080px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: visible;
+  }
+
+  .logos3-header {
+    display: flex;
+    align-items: center;
+    margin-left: 3px;
+  }
+
+  .logos3-header__logo1 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    width: 70px;
+    height: 200px;
+    background: #ff5959;
+    margin-left: 5px;
+  }
+  .logos3-header__logo2 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 70px;
+    height: 100px;
+    background: rgb(97, 153, 175);
+    margin-left: 5px;
+  }
+
+  .logos3-header__logo3 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 70px;
+    height: 100px;
+    background: #f6b436;
+    margin-left: 5px;
+  }
+
+  .header-right-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-login-desktop {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .header-login-desktop__logo {
+    width: 27px;
+    height: 27px;
+    margin-right: 10px;
+    background: url($sprite-url) 0 0 no-repeat;
+    &:hover {
+      background: url($sprite-url) -37px 0 no-repeat;
+    }
+  }
+  .header-login-desktop__text {
+    &:hover {
+      color: #ff5959;
+    }
+  }
+  .header-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 50px;
+
+    &__facebook {
+      width: 25px;
+      height: 20px;
+      margin-right: 13px;
+      background: url($sprite-url) -4px -540px no-repeat;
+      &:hover {
+        background: url($sprite-url) -37px 0 no-repeat;
+        cursor: pointer;
+      }
+    }
+    &__twitter {
+      width: 25px;
+      height: 20px;
+      margin-right: 13px;
+      background: url($sprite-url) -40px -540px no-repeat;
+      &:hover {
+        background: url($sprite-url) -37px 0 no-repeat;
+        cursor: pointer;
+      }
+    }
+    &__instagram {
+      width: 25px;
+      height: 20px;
+      margin-right: 13px;
+      background: url($sprite-url) -75px -540px no-repeat;
+      &:hover {
+        background: url($sprite-url) -37px 0 no-repeat;
+        cursor: pointer;
+      }
+    }
+    &__pinterest {
+      width: 25px;
+      height: 20px;
+      margin-right: 13px;
+      background: url($sprite-url) -110px -540px no-repeat;
+      &:hover {
+        background: url($sprite-url) -37px 0 no-repeat;
+        cursor: pointer;
+      }
+    }
+    &__youtube {
+      width: 25px;
+      height: 20px;
+      margin-right: 13px;
+      background: url($sprite-url) -180px -540px no-repeat;
+      &:hover {
+        background: url($sprite-url) -37px 0 no-repeat;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .main-header {
+    display: none;
+  }
+  .main-header-desktop {
+    width: 1080px;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .logo-header-desktop {
+  }
+
+  .main-header-searching-bar {
+  }
+
+  .menu-bar-tools {
+    &__image {
+      width: 80px;
+      height: 80px;
+
   .information {
     background-color: #e8e6e5;
     height: 215px;
@@ -746,6 +916,7 @@
     &__chart-conditions-link {
       display: flex;
       flex-direction: row;
+
     }
   }
 }
