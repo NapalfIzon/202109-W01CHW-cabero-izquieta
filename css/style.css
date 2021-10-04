@@ -264,8 +264,13 @@
   align-items: center;
   margin-right: 5px;
 }
-.information__block-A :hover {
-  background-position: 0 -109px;
+.information__block-A:hover .information__logo-A {
+  background: url("/icons/sprite.svg") 0 -109px no-repeat transparent;
+}
+.information__block-A:hover .information__text-A-upper {
+  color: #ff5959;
+}
+.information__block-A:hover .information__text-A-lower {
   color: #ff5959;
 }
 .information__logo-A {
@@ -301,8 +306,13 @@
   align-items: center;
   margin-left: 5px;
 }
-.information__block-B :hover {
+.information__block-B:hover .information__logo-B {
   background-position: -90px -109px;
+}
+.information__block-B:hover .information__text-B-upper {
+  color: #ff5959;
+}
+.information__block-B:hover .information__text-B-lower {
   color: #ff5959;
 }
 .information__logo-B {
@@ -340,8 +350,13 @@
   align-items: center;
   margin-right: 5px;
 }
-.information__block-C :hover {
+.information__block-C:hover .information__logo-C {
   background-position: -150px -107px;
+}
+.information__block-C:hover .information__text-C-upper {
+  color: #ff5959;
+}
+.information__block-C:hover .information__text-C-lower {
   color: #ff5959;
 }
 .information__logo-C {
@@ -379,8 +394,13 @@
   align-items: center;
   margin-left: 5px;
 }
-.information__block-D :hover {
+.information__block-D:hover .information__logo-D {
   background-position: -223px -109px;
+}
+.information__block-D:hover .information__text-D-upper {
+  color: #ff5959;
+}
+.information__block-D:hover .information__text-D-lower {
   color: #ff5959;
 }
 .information__logo-D {
@@ -1010,9 +1030,7 @@
     background: #f2f2f2 url("/icons/menu.svg") -400px 0 no-repeat;
   }
 
-
   /*a partir de aquí es footer*/
-
   .information {
     background-color: #e8e6e5;
     height: 215px;
@@ -1055,7 +1073,7 @@
     margin-top: 0;
   }
   .newsletter__checkbox {
-    height: 18px;
+    height: 20px;
     width: 250px;
     display: flex;
     justify-content: space-around;
@@ -1063,10 +1081,22 @@
     outline: none;
     margin-top: 5px;
     margin-left: 5px;
+    margin-bottom: 5px;
+    font-size: 13px;
+    overflow-y: hidden;
+  }
+  .newsletter__lopd {
+    height: 25px;
+    overflow-y: hidden;
+  }
+  .newsletter__lopd-link {
+    height: 25px;
+    overflow-y: hidden;
   }
   .newsletter__formulary {
     margin-left: 75px;
     margin-right: 75px;
+    margin-bottom: 25px;
     width: 245px;
     display: flex;
   }
@@ -1093,8 +1123,6 @@
     display: flex;
     flex-direction: row;
   }
-}
-}
 }
 
 /*# sourceMappingURL=style.css.map */
