@@ -671,7 +671,6 @@
 }
 
 @media (min-width: 600px) {
-
   .navigation-bar {
     display: none;
   }
@@ -833,11 +832,7 @@
   .main-header-searching-bar {
   }
 
-  .menu-bar-tools {
-    &__image {
-      width: 80px;
-      height: 80px;
-
+  /*a partir de aquí es footer*/
   .information {
     background-color: #e8e6e5;
     height: 215px;
@@ -916,7 +911,6 @@
     &__chart-conditions-link {
       display: flex;
       flex-direction: row;
-
     }
   }
 }
