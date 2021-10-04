@@ -272,9 +272,18 @@
     flex-direction: column;
     align-items: center;
     margin-right: 5px;
-    :hover {
-      background-position: 0 -109px;
-      color: #ff5959;
+    &:hover {
+      .information {
+        &__logo-A {
+          background: url($sprite-url) 0 -109px no-repeat transparent;
+        }
+        &__text-A-upper {
+          color: #ff5959;
+        }
+        &__text-A-lower {
+          color: #ff5959;
+        }
+      }
     }
   }
   &__logo-A {
@@ -309,9 +318,18 @@
     flex-direction: column;
     align-items: center;
     margin-left: 5px;
-    :hover {
-      background-position: -90px -109px;
-      color: #ff5959;
+    &:hover {
+      .information {
+        &__logo-B {
+          background-position: -90px -109px;
+        }
+        &__text-B-upper {
+          color: #ff5959;
+        }
+        &__text-B-lower {
+          color: #ff5959;
+        }
+      }
     }
   }
   &__logo-B {
@@ -348,9 +366,18 @@
     flex-direction: column;
     align-items: center;
     margin-right: 5px;
-    :hover {
-      background-position: -150px -107px;
-      color: #ff5959;
+    &:hover {
+      .information {
+        &__logo-C {
+          background-position: -150px -107px;
+        }
+        &__text-C-upper {
+          color: #ff5959;
+        }
+        &__text-C-lower {
+          color: #ff5959;
+        }
+      }
     }
   }
   &__logo-C {
@@ -387,9 +414,18 @@
     flex-direction: column;
     align-items: center;
     margin-left: 5px;
-    :hover {
-      background-position: -223px -109px;
-      color: #ff5959;
+    &:hover {
+      .information {
+        &__logo-D {
+          background-position: -223px -109px;
+        }
+        &__text-D-upper {
+          color: #ff5959;
+        }
+        &__text-D-lower {
+          color: #ff5959;
+        }
+      }
     }
   }
   &__logo-D {
@@ -1060,7 +1096,7 @@
       margin-top: 0;
     }
     &__checkbox {
-      height: 18px;
+      height: 20px;
       width: 250px;
       display: flex;
       justify-content: space-around;
@@ -1068,10 +1104,22 @@
       outline: none;
       margin-top: 5px;
       margin-left: 5px;
+      margin-bottom: 5px;
+      font-size: 13px;
+      overflow-y: hidden;
+    }
+    &__lopd {
+      height: 25px;
+      overflow-y: hidden;
+    }
+    &__lopd-link {
+      height: 25px;
+      overflow-y: hidden;
     }
     &__formulary {
       margin-left: 75px;
       margin-right: 75px;
+      margin-bottom: 25px;
       width: 245px;
       display: flex;
     }
