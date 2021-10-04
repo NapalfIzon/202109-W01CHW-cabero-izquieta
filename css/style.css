@@ -697,6 +697,39 @@
   color: #600;
 }
 
+.contact {
+  height: 31px;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.contact__bloc {
+  height: 31px;
+  width: 200px;
+  background-color: #2e2925;
+  margin-right: 65px;
+  border-radius: 7px 7px 0 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+.contact__bloc-A {
+  transform: scale(0.7);
+}
+.contact__bloc-B {
+  color: white;
+  font-family: Verdana, sans-serif;
+  line-height: 27px;
+  border-radius: 5px 5px 0px 0px;
+  font-size: 12px;
+  font-weight: 700;
+  box-sizing: border-box;
+  margin-right: 15px;
+}
+
 @media (min-width: 600px) {
   .navigation-bar {
     display: none;
