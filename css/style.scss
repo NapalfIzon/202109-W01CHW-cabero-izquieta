@@ -724,6 +724,39 @@
   }
 }
 
+.contact {
+  height: 31px;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+  &__bloc {
+    height: 31px;
+    width: 200px;
+    background-color: rgb(46, 41, 37);
+    margin-right: 65px;
+    border-radius: 7px 7px 0 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+  }
+  &__bloc-A {
+    transform: scale(0.7);
+  }
+  &__bloc-B {
+    color: white;
+    font-family: Verdana, sans-serif;
+    line-height: 27px;
+    border-radius: 5px 5px 0px 0px;
+    font-size: 12px;
+    font-weight: 700;
+    box-sizing: border-box;
+    margin-right: 15px;
+  }
+}
+
 @media (min-width: 600px) {
   .navigation-bar {
     display: none;
