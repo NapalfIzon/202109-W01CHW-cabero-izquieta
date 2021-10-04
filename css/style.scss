@@ -1016,6 +1016,9 @@
       background: hsl(0, 0%, 95%) url($blog) -400px 0 no-repeat;
     }
   }
+
+  /*a partir de aquí es footer*/
+
   .information {
     background-color: #e8e6e5;
     height: 215px;
@@ -1046,7 +1049,7 @@
     }
     &__desktop-separator-bar {
       display: flex;
-      height: 147px;
+      height: 148px;
       width: 1px;
       background-color: #a5a5a5;
       margin-top: 59px;

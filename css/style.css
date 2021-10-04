@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap%22");
 * {
   margin: 0;
@@ -1009,6 +1010,9 @@
     background: #f2f2f2 url("/icons/menu.svg") -400px 0 no-repeat;
   }
 
+
+  /*a partir de aquí es footer*/
+
   .information {
     background-color: #e8e6e5;
     height: 215px;
@@ -1040,7 +1044,7 @@
   }
   .newsletter__desktop-separator-bar {
     display: flex;
-    height: 147px;
+    height: 148px;
     width: 1px;
     background-color: #a5a5a5;
     margin-top: 59px;
@@ -1089,6 +1093,8 @@
     display: flex;
     flex-direction: row;
   }
+}
+}
 }
 
 /*# sourceMappingURL=style.css.map */
