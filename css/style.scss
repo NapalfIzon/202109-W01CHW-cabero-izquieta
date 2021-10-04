@@ -28,6 +28,9 @@
   flex-direction: column;
   justify-content: center;
 }
+.main-header-desktop {
+  display: none;
+}
 
 .header-container {
   display: flex;
@@ -39,6 +42,10 @@
   display: flex;
   position: fixed;
   top: 0;
+}*/
+
+/*.header-container-desktop {
+  display: none;
 }*/
 
 .fixed-header {
@@ -75,6 +82,7 @@
     width: 50px;
     height: 50px;
     background: #bbb8b6 url($sprite-url) -304px 12px no-repeat;
+
     &:hover {
       cursor: pointer;
     }
@@ -708,7 +716,6 @@
     width: 70px;
     height: 200px;
     background: #ff5959;
-    margin-left: 5px;
   }
   .logos3-header__logo2 {
     display: flex;
@@ -718,6 +725,9 @@
     height: 100px;
     background: rgb(97, 153, 175);
     margin-left: 5px;
+    &:hover {
+      height: 200px;
+    }
   }
 
   .logos3-header__logo3 {
@@ -728,6 +738,9 @@
     height: 100px;
     background: #f6b436;
     margin-left: 5px;
+    &:hover {
+      height: 200px;
+    }
   }
 
   .header-right-container {
@@ -740,8 +753,16 @@
     display: flex;
     align-items: center;
     font-size: 13px;
+    height: 50px;
     &:hover {
       cursor: pointer;
+
+      .header-login-desktop__logo {
+        background: url($sprite-url) -37px 0 no-repeat;
+      }
+      .header-login-desktop__text {
+        color: #ff5959;
+      }
     }
   }
   .header-login-desktop__logo {
@@ -770,7 +791,7 @@
       margin-right: 13px;
       background: url($sprite-url) -4px -540px no-repeat;
       &:hover {
-        background: url($sprite-url) -37px 0 no-repeat;
+        background: url($sprite-url) -4px -500px no-repeat;
         cursor: pointer;
       }
     }
@@ -780,7 +801,7 @@
       margin-right: 13px;
       background: url($sprite-url) -40px -540px no-repeat;
       &:hover {
-        background: url($sprite-url) -37px 0 no-repeat;
+        background: url($sprite-url) -40px -500px no-repeat;
         cursor: pointer;
       }
     }
@@ -790,7 +811,7 @@
       margin-right: 13px;
       background: url($sprite-url) -75px -540px no-repeat;
       &:hover {
-        background: url($sprite-url) -37px 0 no-repeat;
+        background: url($sprite-url) -75px -500px no-repeat;
         cursor: pointer;
       }
     }
@@ -800,7 +821,7 @@
       margin-right: 13px;
       background: url($sprite-url) -110px -540px no-repeat;
       &:hover {
-        background: url($sprite-url) -37px 0 no-repeat;
+        background: url($sprite-url) -110px -500px no-repeat;
         cursor: pointer;
       }
     }
@@ -810,7 +831,7 @@
       margin-right: 13px;
       background: url($sprite-url) -180px -540px no-repeat;
       &:hover {
-        background: url($sprite-url) -37px 0 no-repeat;
+        background: url($sprite-url) -180px -500px no-repeat;
         cursor: pointer;
       }
     }
@@ -820,19 +841,184 @@
     display: none;
   }
   .main-header-desktop {
-    width: 1080px;
-    margin-top: 150px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    margin-top: 100px;
+    margin-left: 8px;
+    justify-content: center;
   }
+
+  .header-container-desktop {
+    width: 1080px;
+    display: flex;
+    justify-content: space-between;
+  }
+
   .logo-header-desktop {
+    display: flex;
+    align-items: flex-end;
+
+    margin-bottom: 190px;
+    margin-top: 80px;
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   .main-header-searching-bar {
+    display: flex;
+    color: white;
+    justify-content: flex-start;
+    margin: 20px 0;
+    &__new {
+      margin-right: 8px;
+      background: #9faa4d;
+      display: flex;
+      align-items: center;
+      padding: 0 5px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    &__star1 {
+      width: 30px;
+      height: 30px;
+      background: #9faa4d url($sprite-url) -244px 4px no-repeat;
+    }
+    &__offers {
+      margin-right: 8px;
+      background: #8e789d;
+      display: flex;
+      align-items: center;
+      padding: 0 5px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    &__star2 {
+      width: 30px;
+      height: 30px;
+      background: #8e789d url($sprite-url) -274px 4px no-repeat;
+    }
+    &__search {
+      display: flex;
+      flex-grow: 2;
+    }
+    &__input {
+      height: 30px;
+
+      border-color: #bbb8b6;
+      border-width: 1px;
+      letter-spacing: 1px;
+      padding: 0 5px;
+    }
+
+    &__magnifier {
+      width: 49px;
+      height: 30px;
+      background: #bbb8b6 url($sprite-url) -303px 2px no-repeat;
+    }
+  }
+  .news-text,
+  .offers-text {
+    padding: 0 10px;
+  }
+
+  .main-header-menu-bar {
+    display: flex;
+    padding: 0 5px;
+  }
+
+  .menu-bar-tools {
+    background: hsl(0, 0%, 95%);
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 9px;
+    padding: 20px 5px;
+    overflow-y: hidden;
+    &__image {
+      width: 60px;
+      height: 67.4px;
+    }
+    &:hover {
+      background: #ff5959;
+      cursor: pointer;
+    }
+  }
+  .menu-bar-ingredients {
+    background: hsl(0, 0%, 95%);
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 9px;
+    padding: 20px 5px;
+    overflow-y: hidden;
+    &:hover {
+      background: #ff5959;
+      cursor: pointer;
+    }
+  }
+
+  .menu-bar-branches {
+    box-sizing: border-box;
+    padding: 5px;
+    background: hsl(0, 0%, 95%);
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 9px;
+    padding: 20px 5px;
+    overflow-y: hidden;
+    &:hover {
+      background: #ff5959;
+      cursor: pointer;
+    }
+  }
+
+  .menu-bar-parties {
+    background: hsl(0, 0%, 95%);
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 9px;
+    padding: 20px 5px;
+    overflow-y: hidden;
+    &:hover {
+      background: #ff5959;
+      cursor: pointer;
+    }
+  }
+  .menu-bar-tools__image {
+    background-size: auto;
+  }
+  .menu-bar-blog-container {
+    display: flex;
+    margin-left: 32px;
+    &:hover {
+      background: hsl(0, 0%, 95%);
+      cursor: pointer;
+    }
+  }
+  .menu-bar-blog {
+    width: 100px;
+    height: 100px;
+    background: #ff5959 url($blog) -400px 0 no-repeat;
+    &:hover {
+      background: hsl(0, 0%, 95%) url($blog) -400px 0 no-repeat;
+    }
   }
 
   /*a partir de aquí es footer*/
+
   .information {
     background-color: #e8e6e5;
     height: 215px;

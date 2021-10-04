@@ -14,7 +14,8 @@ The designs were created to the following widths:
 - Dark grey: hsl(30,4%,39%)
 - Very dark grey: hsl(27,11%,16%)
 - Yellow: #F6B436
-- Blue: rgb(97, 153, 175);
+- Blue: rgb(97, 153, 175)
+- Green: #9faa4d
 
 ### Primary
 
