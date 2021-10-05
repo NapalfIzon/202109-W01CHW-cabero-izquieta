@@ -58,6 +58,8 @@
 
 .header-burger {
   background: url("/icons/burger_menu.png") no-repeat;
+  /*&__logo-header-burger {
+  }*/
 }
 .header-burger:hover {
   cursor: pointer;
@@ -176,14 +178,27 @@
 .main-options {
   width: 325px;
 }
+.main-options__option {
+  margin-bottom: 15px;
+}
 .main-options__image {
   width: 325px;
   height: 150px;
+  background: url("/images/frozen.jpeg") 55px 0 repeat;
+  background-size: cover;
   opacity: 0.8;
-  object-fit: cover;
-  object-position: 0 10px;
 }
 .main-options__image:hover {
+  cursor: pointer;
+}
+.main-options__image2 {
+  width: 325px;
+  height: 150px;
+  background: url("/images/minions.jpeg") 55px 0 repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+.main-options__image2:hover {
   cursor: pointer;
 }
 .main-options__text-container {
@@ -197,8 +212,33 @@
   bottom: 0;
   z-index: 1;
 }
+.main-options__image3 {
+  width: 325px;
+  height: 150px;
+  background: url("/images/starwars.jpeg") 55px 0 repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+back .main-options__image3:hover {
+  cursor: pointer;
+}
+.main-options__text-container2 {
+  height: 75px;
+  width: 50%;
+  background-color: white;
+  opacity: 0.8;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: 0;
+  z-index: 1;
+}
+.main-options__text2 {
+  display: none;
+}
 .main-options__text {
   position: absolute;
+  font-size: 18px;
   left: 15px;
   color: #67635f;
   font-family: "Source Sans Pro", sans-serif;
@@ -225,6 +265,7 @@
 }
 .main-button:hover {
   opacity: 0.5;
+  cursor: pointer;
 }
 .main-button__more {
   background-color: #ff5959;
@@ -711,6 +752,7 @@
     align-items: center;
     justify-content: space-between;
     overflow: visible;
+    margin-left: -5px;
   }
 
   .logos3-header {
@@ -855,7 +897,7 @@
     display: flex;
     flex-direction: row;
     margin-top: 100px;
-    margin-left: 8px;
+    margin-left: 25px;
     justify-content: center;
   }
 
@@ -913,10 +955,10 @@
   }
   .main-header-searching-bar__search {
     display: flex;
-    flex-grow: 2;
   }
   .main-header-searching-bar__input {
     height: 30px;
+    width: 242px;
     border-color: #bbb8b6;
     border-width: 1px;
     letter-spacing: 1px;
@@ -1028,6 +1070,101 @@
   }
   .menu-bar-blog:hover {
     background: #f2f2f2 url("/icons/menu.svg") -400px 0 no-repeat;
+  }
+
+  /*.main-options__container-mobile {
+    display: flex;
+  }*/
+  .main-options {
+    width: 1080px;
+    display: flex;
+    justify-content: center;
+    margin-left: 15px;
+    margin-bottom: 15px;
+  }
+  .main-options__image {
+    width: 720px;
+    height: 300px;
+    background: url("/images/frozen.jpeg") 5px 0 repeat;
+    background-size: cover;
+  }
+  .main-options__image:hover {
+    cursor: pointer;
+  }
+  .main-options__image2 {
+    width: 720px;
+    height: 300px;
+    background: url("/images/minions.jpeg") 55px 0 repeat;
+    background-size: cover;
+  }
+  .main-options__image-desktop {
+    width: 360px;
+    height: 615px;
+    background: url("/images/starwars.jpeg") -150px 5px repeat;
+    background-size: cover;
+    margin-left: 15px;
+  }
+  .main-options__text-container {
+    width: 100px;
+    height: 120px;
+    width: 50%;
+    background-color: white;
+    opacity: 0.8;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    z-index: 1;
+  }
+  .main-options__text-container2 {
+    height: 120px;
+    width: 100%;
+    background-color: white;
+    opacity: 0.8;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    z-index: 1;
+  }
+  .main-options__text {
+    position: absolute;
+    left: 49px;
+    color: #67635f;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 900;
+    font-stretch: 100%;
+    top: 30px;
+    line-height: 17px;
+    text-transform: uppercase;
+    z-index: 2;
+    overflow-y: hidden;
+  }
+  .main-options__text2 {
+    display: block;
+    position: absolute;
+    left: 35px;
+    color: #67635f;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    font-stretch: 100%;
+    top: 60px;
+    line-height: 19px;
+    z-index: 2;
+    overflow-y: hidden;
+    box-sizing: border-box;
+    padding-left: 15px;
+  }
+  .main-options__box {
+    position: relative;
+    display: inline-block;
+    border-right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .main-options__box:hover {
+    cursor: pointer;
   }
 
   /*a partir de aquí es footer*/
