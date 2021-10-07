@@ -58,8 +58,8 @@
 
 .header-burger {
   background: url($burger-url) no-repeat;
-  &__logo-header-burger {
-  }
+  /*&__logo-header-burger {
+  }*/
   &:hover {
     cursor: pointer;
   }
@@ -181,14 +181,33 @@
 
 .main-options {
   width: 325px;
-
+  &__option {
+    margin-bottom: 15px;
+  }
   &__image {
     width: 325px;
     height: 150px;
+    background: url($imagen1) 55px 0 repeat;
+    background-size: cover;
     opacity: 0.8;
-    //margin-bottom: 5px;
-    object-fit: cover;
-    object-position: 0 10px;
+
+    //object-fit: cover;
+    //background-position: 415px 0;
+    //  object-position: 0 10px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__image2 {
+    width: 325px;
+    height: 150px;
+    background: url($imagen2) 55px 0 repeat;
+    background-size: cover;
+    opacity: 0.8;
+
+    //object-fit: cover;
+    //background-position: 415px 0;
+    //  object-position: 0 10px;
     &:hover {
       cursor: pointer;
     }
@@ -204,8 +223,38 @@
     bottom: 0;
     z-index: 1;
   }
+  &__image3 {
+    width: 325px;
+    height: 150px;
+    background: url($imagen3) 55px 0 repeat;
+    background-size: cover;
+    opacity: 0.8;
+
+    back
+    //object-fit: cover;
+    //background-position: 415px 0;
+    //  object-position: 0 10px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__text-container2 {
+    height: 75px;
+    width: 50%;
+    background-color: white;
+    opacity: 0.8;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    z-index: 1;
+  }
+  &__text2 {
+    display: none;
+  }
   &__text {
     position: absolute;
+    font-size: 18px;
     left: 15px;
     color: #67635f;
     font-family: "Source Sans Pro", sans-serif;
@@ -234,6 +283,7 @@
   margin-top: 40px;
   &:hover {
     opacity: 0.5;
+    cursor: pointer;
   }
   &__more {
     background-color: #ff5959;
@@ -779,6 +829,7 @@
     align-items: center;
     justify-content: space-between;
     overflow: visible;
+    margin-left: -5px;
   }
 
   .logos3-header {
@@ -926,7 +977,7 @@
     display: flex;
     flex-direction: row;
     margin-top: 100px;
-    margin-left: 8px;
+    margin-left: 25px;
     justify-content: center;
   }
 
@@ -984,11 +1035,10 @@
     }
     &__search {
       display: flex;
-      flex-grow: 2;
     }
     &__input {
       height: 30px;
-
+      width: 242px;
       border-color: #bbb8b6;
       border-width: 1px;
       letter-spacing: 1px;
@@ -1101,6 +1151,108 @@
     background: #ff5959 url($blog) -400px 0 no-repeat;
     &:hover {
       background: hsl(0, 0%, 95%) url($blog) -400px 0 no-repeat;
+    }
+  }
+  // aquí comienza <MAIN>
+
+  /*.main-options__container-mobile {
+    display: flex;
+  }*/
+
+  .main-options {
+    width: 1080px;
+    display: flex;
+    justify-content: center;
+    margin-left: 15px;
+    margin-bottom: 15px;
+
+    &__image {
+      width: 720px;
+      height: 300px;
+      background: url($imagen1) 5px 0 repeat;
+      background-size: cover;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    &__image2 {
+      width: 720px;
+      height: 300px;
+      background: url($imagen2) 55px 0 repeat;
+      background-size: cover;
+    }
+    &__image-desktop {
+      width: 360px;
+      height: 615px;
+
+      background: url($imagen3) -150px 5px repeat;
+      background-size: cover;
+      margin-left: 15px;
+    }
+
+    &__text-container {
+      width: 100px;
+      height: 120px;
+      width: 50%;
+      background-color: white;
+      opacity: 0.8;
+      position: absolute;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      z-index: 1;
+    }
+    &__text-container2 {
+      height: 120px;
+      width: 100%;
+      background-color: white;
+      opacity: 0.8;
+      position: absolute;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+
+      z-index: 1;
+    }
+    &__text {
+      position: absolute;
+      left: 49px;
+      color: #67635f;
+      font-family: "Source Sans Pro", sans-serif;
+      font-weight: 900;
+      font-stretch: 100%;
+      top: 30px;
+      line-height: 17px;
+      text-transform: uppercase;
+      z-index: 2;
+      overflow-y: hidden;
+    }
+    &__text2 {
+      display: block;
+      position: absolute;
+      left: 35px;
+      color: #67635f;
+      font-family: "Source Sans Pro", sans-serif;
+      font-weight: 400;
+      font-stretch: 100%;
+      top: 60px;
+      line-height: 19px;
+      z-index: 2;
+      overflow-y: hidden;
+      box-sizing: border-box;
+      padding-left: 15px;
+    }
+    &__box {
+      position: relative;
+      display: inline-block;
+      border-right: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 
